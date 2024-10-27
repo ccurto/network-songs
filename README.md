@@ -13,8 +13,6 @@ The second script allows the user to create songs from all the CTLN examples tha
 
 Most of the functions here are general TLN and CTLN functions that are also found in CTLN Basic 2.0, but included here to make the package self-contained. The new functions needed to generate the network songs are:
 
-key2freq.m
-rates2sound.m
-soln2song.m
+key2freq.m, rates2sound.m, and soln2song.m
 
 The scripts above call key2freq and soln2song, while soln2song calls rates2sound. One can think of soln2song as a wrapper for rates2sound, including the thresholding of the rate curves as a preprocessing step. The thresholding makes the songs sound more like piano songs, with crisper on/off transitions for each neuron. We also create and save "raw" versions of each song, without thresholding. These sound more like organ or alien music.
